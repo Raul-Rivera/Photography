@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  height: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 1600px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(255, 255, 255, 0.1),
+    -30px 0px 40px rgba(251, 251, 251, 0.1);
+}
+
+#landing {
+  background: rgb(100, 82, 22);
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: rgb(255, 255, 255);
+}
+
+#landing-image {
+  background: url(photography.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn {
+    background: #382c0c;
+    background-image: -webkit-linear-gradient(top, #382c0c, #b88e2b);
+    background-image: -moz-linear-gradient(top, #382c0c, #b88e2b);
+    background-image: -ms-linear-gradient(top, #382c0c, #b88e2b);
+    background-image: -o-linear-gradient(top, #382c0c, #b88e2b);
+    background-image: linear-gradient(to bottom, #382c0c, #b88e2b);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    text-shadow: 6px 1px 9px #666666;
+    -webkit-box-shadow: 5px 3px 7px #666666;
+    -moz-box-shadow: 5px 3px 7px #666666;
+    box-shadow: 5px 3px 7px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 17px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #cca329;
+    background-image: -webkit-linear-gradient(top, #cca329, #ffaa00);
+    background-image: -moz-linear-gradient(top, #cca329, #ffaa00);
+    background-image: -ms-linear-gradient(top, #cca329, #ffaa00);
+    background-image: -o-linear-gradient(top, #cca329, #ffaa00);
+    background-image: linear-gradient(to bottom, #cca329, #ffaa00);
+    text-decoration: none;
+  }
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  box-shadow: 30px 0px 40px rgba(235, 165, 14, 0.1),
+  -30px 0px 40px rgba(235, 165, 14, 0.1);
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+
+footer h3 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 700px and Up */
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(100, 82, 22);
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 31%;
+    margin: 10px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 200%;
+  }
+
+  @media (min-width: 390px) {
+    .flex-container > div {
+        width: 100%;
+        font-size: 20px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .flex-container > div {
+        width: 95%;
+        font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .flex-container > div {
+        width: 45%;
+        font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1555px) {
+    .flex-container > div {
+        width: 31%;
+        font-size: 30px;
+    }
+  }
